@@ -48,16 +48,32 @@ const LandingPage = () => {
     <div className="min-h-screen bg-[#0a0a0a]" data-testid="landing-page">
       {/* Hero Section */}
       <section className="min-h-screen grid grid-cols-1 lg:grid-cols-2" data-testid="hero-section">
-        {/* Left - Vintage Image */}
-        <div className="relative overflow-hidden bg-[#111] flex items-center justify-center p-8 lg:p-0">
-          <div className="relative w-full h-full max-h-[600px] lg:max-h-none">
+        {/* Left - X-Ray Machine Images */}
+        <div className="relative overflow-hidden bg-[#111] flex items-center justify-center p-4 lg:p-0">
+          <div className="relative w-full h-full">
+            {/* Main hero image */}
             <img 
-              src="https://images.unsplash.com/photo-1579684288402-e3e337bcc7af?w=800&auto=format&fit=crop"
-              alt="Modern medical imaging equipment"
-              className="w-full h-full object-cover vintage-filter duotone-red"
+              src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%2Fid%2FOIP.rU3ieSi5-7YqQdNPVWj7DAHaD4%3Fpid%3DApi&f=1"
+              alt="X-ray machine operator at work"
+              className="w-full h-[50vh] lg:h-[70vh] object-cover vintage-filter duotone-red"
               data-testid="hero-image"
             />
-            <div className="absolute bottom-8 left-8 right-8 bg-black/80 p-4 border-l-4 border-[#FF3B30]">
+            {/* Secondary images grid */}
+            <div className="grid grid-cols-2 gap-1">
+              <img 
+                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.0EowzeUF-hEvteWAsq6EegHaEK%3Fpid%3DApi&f=1"
+                alt="Modern CT scanner"
+                className="w-full h-32 lg:h-40 object-cover vintage-filter"
+                data-testid="hero-image-2"
+              />
+              <img 
+                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%2Fid%2FOIP.e0U58LKeypme4TFBcK5U7QHaEL%3Fpid%3DApi&f=1"
+                alt="MRI machine"
+                className="w-full h-32 lg:h-40 object-cover vintage-filter"
+                data-testid="hero-image-3"
+              />
+            </div>
+            <div className="absolute bottom-0 left-0 right-0 bg-black/90 p-4 border-l-4 border-[#FF3B30]">
               <p className="font-mono text-sm text-white/70">
                 THIS IS MODERN HEALTHCARE — NOT 1950
               </p>
