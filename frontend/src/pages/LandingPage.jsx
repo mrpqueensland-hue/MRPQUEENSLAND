@@ -1,8 +1,8 @@
 import { useState } from "react";
 import axios from "axios";
 import { toast } from "sonner";
-import { ChevronDown, Activity, Zap, Radio, Heart, Mail, Download, Share2, AlertTriangle, FileText } from "lucide-react";
-import { QRCodeSVG } from "qrcode.react";
+import { ChevronDown, Activity, Zap, Radio, Heart, Mail, Share2, AlertTriangle, FileText } from "lucide-react";
+import PosterDownload from "../components/PosterDownload";
 
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 const API = `${BACKEND_URL}/api`;
