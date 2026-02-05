@@ -480,7 +480,7 @@ const LandingPage = () => {
             </div>
             <div className="md:text-right">
               <p className="font-mono text-sm text-white/50 mb-2">CONTACT</p>
-              <p className="font-body text-white">info@mrpcrisis.com.au</p>
+              <a href="mailto:MRPQUEENSLAND@GMAIL.COM" className="font-body text-white hover:text-[#FF3B30] transition-colors">MRPQUEENSLAND@GMAIL.COM</a>
             </div>
           </div>
           
