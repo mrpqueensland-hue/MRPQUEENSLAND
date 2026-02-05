@@ -84,32 +84,34 @@ const LandingPage = () => {
         {/* Right - Content */}
         <div className="flex flex-col justify-center p-8 md:p-12 lg:p-16 xl:p-24 bg-[#0a0a0a]">
           <div className="max-w-xl">
-            <p className="font-mono text-[#FF3B30] text-sm tracking-widest mb-4" data-testid="hero-subtitle">
-              QUEENSLAND HEALTH WORKFORCE CRISIS
+            <p className="font-mono text-[#FF3B30] text-sm tracking-widest mb-4 animate-pulse" data-testid="hero-subtitle">
+              ⚠ WORKFORCE CRISIS ALERT
             </p>
             <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl text-white leading-none mb-6" data-testid="hero-title">
-              HEALTH MINISTER:
+              HEALTH MINISTER
               <br />
-              <span className="text-[#FF3B30]">IT'S NOT 1950</span>
+              <span className="text-[#FF3B30]">IGNORES HIS OWN</span>
               <br />
-              ANYMORE.
+              <span className="text-[#F5A623]">WORKFORCE REPORT</span>
             </h1>
-            <p className="font-body text-lg text-white/70 mb-8 leading-relaxed" data-testid="hero-description">
-              Modern medicine runs on <span className="text-white font-semibold">Medical Radiation Professionals</span>. 
-              The government's own report shows a <span className="text-[#FF3B30] font-semibold">critical 909 FTE gap</span>. 
-              Yet the Minister's response? <span className="text-[#F5A623]">Silence.</span>
+            <p className="font-body text-lg text-white/70 mb-6 leading-relaxed" data-testid="hero-description">
+              The Queensland Government published a damning workforce gap analysis. 
+              It shows <span className="text-[#FF3B30] font-bold">909 Medical Radiation Professionals missing by 2032</span>. 
+              The Minister's response? <span className="text-[#FF3B30] font-bold uppercase">Complete silence.</span>
             </p>
-            <p className="font-body text-base text-white/50 mb-8">
-              Does the Health Minister think hospitals still run like they did in the 1950s "Carry On" movie era, 
-              where only doctors and nurses mattered?
-            </p>
+            <div className="p-4 bg-[#FF3B30]/20 border-l-4 border-[#FF3B30] mb-8">
+              <p className="font-mono text-sm text-white/90">
+                Does the Health Minister think it's still the 1950s "Carry On" movie era — 
+                where only doctors and nurses mattered?
+              </p>
+            </div>
             <div className="flex flex-col sm:flex-row gap-4">
               <button 
                 onClick={() => scrollToSection('crisis')}
                 className="btn-primary flex items-center justify-center gap-2"
                 data-testid="see-gap-btn"
               >
-                SEE THE GAP
+                SEE THE EVIDENCE
                 <ChevronDown className="w-5 h-5" />
               </button>
               <button 
@@ -117,7 +119,7 @@ const LandingPage = () => {
                 className="btn-secondary"
                 data-testid="join-watchlist-btn"
               >
-                JOIN THE WATCHLIST
+                TAKE ACTION
               </button>
             </div>
           </div>
