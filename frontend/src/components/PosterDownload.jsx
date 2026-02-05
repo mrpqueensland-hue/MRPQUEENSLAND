@@ -37,7 +37,7 @@ const PosterDownload = ({ siteUrl = window.location.href }) => {
   };
 
   return (
-    <div className="space-y-12">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {/* Poster 1 - QR Code Portrait */}
       <div className="bg-[#111] border border-white/10 p-6">
         <h3 className="font-mono text-sm text-[#FF3B30] uppercase tracking-widest mb-4">
