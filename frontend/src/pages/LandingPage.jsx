@@ -190,7 +190,7 @@ const LandingPage = () => {
             {/* Minister's Statement */}
             <div className="p-8 bg-[#0a0a0a] border-2 border-[#FF3B30]" data-testid="minister-says-card">
               <h3 className="font-mono text-sm text-[#FF3B30] uppercase tracking-widest mb-4">
-                THE MINISTER SAYS
+                WHAT THE MINISTER TOLD THE PUBLIC
               </h3>
               <div className="space-y-4">
                 <p className="font-body text-lg text-white/80">
@@ -205,8 +205,9 @@ const LandingPage = () => {
               </div>
               <div className="mt-6 pt-6 border-t border-white/10">
                 <p className="font-mono text-sm text-white/40">
-                  MRPs mentioned: <span className="text-[#FF3B30] font-bold">0 TIMES</span>
+                  Times MRPs mentioned in press release:
                 </p>
+                <p className="font-heading text-4xl text-[#FF3B30] mt-2">ZERO</p>
               </div>
             </div>
 
