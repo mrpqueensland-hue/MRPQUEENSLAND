@@ -227,7 +227,7 @@ const LandingPage = () => {
 
           <div className="mt-12 p-6 bg-[#FF3B30]/10 border border-[#FF3B30]/30">
             <p className="font-heading text-xl text-[#FF3B30] text-center">
-              90% OF HOSPITAL PATIENTS REQUIRE MRPS FOR DIAGNOSIS AND/OR TREATMENT
+              ~80% OF HOSPITAL PATIENTS REQUIRE MRPS FOR DIAGNOSIS AND/OR TREATMENT
             </p>
           </div>
         </div>
