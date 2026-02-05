@@ -52,16 +52,13 @@ const PosterDownload = ({ siteUrl = window.location.href }) => {
           <div className="h-full flex flex-col justify-between text-center">
             <div>
               <p className="font-mono text-xs text-[#FF3B30] tracking-widest mb-2">
-                QUEENSLAND HEALTH CRISIS
+                ⚠ WORKFORCE CRISIS
               </p>
-              <h2 className="font-heading text-3xl md:text-4xl text-white leading-none">
-                HEALTH MINISTER:
+              <h2 className="font-heading text-2xl md:text-3xl text-white leading-none">
+                MINISTER IGNORES
               </h2>
-              <h2 className="font-heading text-3xl md:text-4xl text-[#FF3B30] leading-none mt-1">
-                IT'S NOT 1950
-              </h2>
-              <h2 className="font-heading text-3xl md:text-4xl text-white leading-none mt-1">
-                ANYMORE
+              <h2 className="font-heading text-2xl md:text-3xl text-[#FF3B30] leading-none mt-1">
+                HIS OWN REPORT
               </h2>
             </div>
             
