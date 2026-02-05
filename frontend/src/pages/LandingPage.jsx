@@ -355,97 +355,11 @@ const LandingPage = () => {
           </div>
           <p className="font-body text-lg text-white/60 mb-12 max-w-2xl">
             Download and share these materials to help raise awareness about the MRP workforce crisis.
+            All posters available as printable PDFs.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* QR Code Poster */}
-            <div className="bg-[#111] border border-white/10 p-6" data-testid="poster-qr">
-              <h3 className="font-mono text-sm text-[#FF3B30] uppercase tracking-widest mb-4">
-                QR CODE POSTER
-              </h3>
-              <div className="bg-white p-8 mb-4">
-                <div className="bg-[#0a0a0a] p-6 text-center">
-                  <p className="font-heading text-2xl text-white mb-2">IT'S NOT 1950</p>
-                  <p className="font-mono text-xs text-[#FF3B30] mb-4">SCAN TO LEARN MORE</p>
-                  <div className="flex justify-center mb-4">
-                    <QRCodeSVG 
-                      value={window.location.href}
-                      size={120}
-                      bgColor="#0a0a0a"
-                      fgColor="#ffffff"
-                      level="M"
-                    />
-                  </div>
-                  <p className="font-body text-xs text-white/60">
-                    QLD Health MRP Crisis
-                  </p>
-                </div>
-              </div>
-              <button 
-                className="btn-secondary w-full flex items-center justify-center gap-2"
-                onClick={() => toast.info("Right-click the poster above to save")}
-                data-testid="download-poster-btn"
-              >
-                <Download className="w-4 h-4" />
-                SAVE POSTER
-              </button>
-            </div>
-
-            {/* Social Card 1 */}
-            <div className="bg-[#111] border border-white/10 p-6" data-testid="social-card-1">
-              <h3 className="font-mono text-sm text-[#F5A623] uppercase tracking-widest mb-4">
-                SOCIAL GRAPHIC #1
-              </h3>
-              <div className="social-card flex flex-col justify-between" data-testid="social-preview-1">
-                <div>
-                  <p className="font-heading text-3xl text-white leading-tight">
-                    909 MRP<br/>SHORTAGE
-                  </p>
-                </div>
-                <div>
-                  <p className="font-mono text-sm text-[#FF3B30]">BY 2032</p>
-                  <p className="font-body text-xs text-white/50 mt-2">
-                    QLD Health's own report warns of critical workforce gap
-                  </p>
-                </div>
-              </div>
-              <button 
-                className="btn-secondary w-full flex items-center justify-center gap-2 mt-4"
-                onClick={() => toast.info("Right-click the graphic above to save")}
-                data-testid="download-social-1-btn"
-              >
-                <Share2 className="w-4 h-4" />
-                SHARE
-              </button>
-            </div>
-
-            {/* Social Card 2 */}
-            <div className="bg-[#111] border border-white/10 p-6" data-testid="social-card-2">
-              <h3 className="font-mono text-sm text-white uppercase tracking-widest mb-4">
-                SOCIAL GRAPHIC #2
-              </h3>
-              <div className="social-card bg-[#FF3B30] flex flex-col justify-between" data-testid="social-preview-2">
-                <div>
-                  <p className="font-heading text-2xl text-white leading-tight">
-                    DOES THE<br/>HEALTH MINISTER<br/>THINK IT'S
-                  </p>
-                </div>
-                <div>
-                  <p className="font-heading text-5xl text-white">1950?</p>
-                  <p className="font-body text-xs text-white/80 mt-2">
-                    Modern hospitals need MRPs
-                  </p>
-                </div>
-              </div>
-              <button 
-                className="btn-secondary w-full flex items-center justify-center gap-2 mt-4"
-                onClick={() => toast.info("Right-click the graphic above to save")}
-                data-testid="download-social-2-btn"
-              >
-                <Share2 className="w-4 h-4" />
-                SHARE
-              </button>
-            </div>
+            <PosterDownload />
           </div>
 
           {/* Domain Suggestions */}
