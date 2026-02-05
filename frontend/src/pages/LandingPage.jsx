@@ -178,10 +178,13 @@ const LandingPage = () => {
       {/* Reality Check - What Minister Said vs Report */}
       <section className="py-16 md:py-24 px-8 md:px-12 lg:px-24 bg-[#111] section-divider" data-testid="reality-check-section">
         <div className="max-w-6xl mx-auto">
-          <div className="flex items-center gap-4 mb-12">
+          <div className="flex items-center gap-4 mb-4">
             <FileText className="w-8 h-8 text-[#F5A623]" />
-            <h2 className="font-heading text-3xl md:text-4xl text-white">REALITY CHECK</h2>
+            <h2 className="font-heading text-3xl md:text-4xl text-white">DELIBERATE IGNORANCE?</h2>
           </div>
+          <p className="font-body text-lg text-white/60 mb-12">
+            The Minister released a press statement about the report. Here's what he said — and what he conveniently left out.
+          </p>
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* Minister's Statement */}
