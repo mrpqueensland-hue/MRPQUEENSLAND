@@ -1,0 +1,160 @@
+{
+  "design_system": {
+    "identity": {
+      "name": "MRP Advocacy - The Silent Crisis",
+      "tone": "Confrontational, Urgent, Factual, Brutalist",
+      "archetype": "Swiss & High-Contrast (Archetype 4)",
+      "core_message": "Modern Medicine needs Modern Wages. Stop living in the 1950s."
+    },
+    "typography": {
+      "headings": {
+        "font_family": "Anton, sans-serif",
+        "weight": "400",
+        "style": "uppercase",
+        "tracking": "tracking-tight",
+        "usage": "Hero titles, Section headers, Big Stats"
+      },
+      "body": {
+        "font_family": "Public Sans, sans-serif",
+        "weight": "400",
+        "usage": "Paragraphs, disclaimers, form labels"
+      },
+      "mono": {
+        "font_family": "JetBrains Mono, monospace",
+        "usage": "Data points, captions, 'redacted' text"
+      }
+    },
+    "colors": {
+      "palette": {
+        "background": "#0a0a0a",
+        "foreground": "#ffffff",
+        "primary": "#FF3B30",
+        "secondary": "#F5A623",
+        "muted": "#2a2a2a",
+        "border": "#ffffff"
+      },
+      "usage": {
+        "hero_bg": "bg-[#0a0a0a]",
+        "text_primary": "text-white",
+        "text_accent": "text-[#FF3B30]",
+        "text_warning": "text-[#F5A623]",
+        "border_color": "border-white/20"
+      }
+    },
+    "layout": {
+      "spacing": {
+        "container_padding": "p-6 md:p-12 lg:p-24",
+        "section_gap": "gap-12 md:gap-24",
+        "element_gap": "gap-4 md:gap-8"
+      },
+      "grid_system": {
+        "hero": "grid grid-cols-1 lg:grid-cols-2 min-h-[80vh]",
+        "bento": "grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4",
+        "stats": "grid grid-cols-1 md:grid-cols-3 gap-8 border-t border-white/20 pt-12"
+      }
+    },
+    "components": {
+      "buttons": {
+        "primary": "bg-[#FF3B30] text-white hover:bg-[#D32F2F] rounded-none uppercase font-bold tracking-widest px-8 py-4 text-lg border-2 border-transparent hover:border-white transition-all",
+        "secondary": "bg-transparent text-white border-2 border-white hover:bg-white hover:text-black rounded-none uppercase font-bold tracking-widest px-8 py-4 text-lg transition-all"
+      },
+      "cards": {
+        "style": "bg-[#111] border border-white/10 p-8 rounded-none hover:border-[#FF3B30] transition-colors duration-300",
+        "stat_card": "flex flex-col gap-2 border-l-4 border-[#FF3B30] pl-6"
+      },
+      "inputs": {
+        "style": "bg-transparent border-b-2 border-white/40 focus:border-[#FF3B30] rounded-none px-0 py-4 text-xl text-white placeholder:text-white/40 focus:outline-none transition-colors"
+      }
+    },
+    "visual_enhancers": {
+      "textures": "Use a subtle noise texture overlay on the background (opacity 0.05) to give it a 'printed pamphlet' feel.",
+      "borders": "Use 1px solid borders for sections. No rounded corners (rounded-none) to maintain the brutalist edge.",
+      "effects": "Use 'glitch' effects on hover for the Minister's quotes."
+    },
+    "media": {
+      "images": {
+        "vintage_hero": {
+          "url": "https://images.unsplash.com/photo-1579856663619-be0609b4c1c4",
+          "alt": "Vintage 1950s nurses talking",
+          "treatment": "Grayscale, high contrast, maybe a red duotone overlay on hover."
+        },
+        "modern_tech_1": {
+          "url": "https://images.unsplash.com/photo-1579684288402-e3e337bcc7af",
+          "alt": "Modern Linear Accelerator",
+          "treatment": "Sharp, clean, cool tones to contrast with vintage."
+        },
+        "modern_tech_2": {
+          "url": "https://images.unsplash.com/photo-1587010580103-fd86b8ea14ca",
+          "alt": "Radiation Therapy Machine",
+          "treatment": "High tech, clinical."
+        }
+      }
+    }
+  },
+  "page_structure": {
+    "sections": [
+      {
+        "name": "Hero",
+        "type": "Split Screen",
+        "content": {
+          "left": "Image: Vintage Nurses (Grayscale)",
+          "right": "Headline: 'HEALTH MINISTER: IT'S NOT 1950 ANYMORE.' Subhead: 'Modern Medicine runs on MRPs. Why are you paying them like it's the past?' CTA: 'SEE THE GAP'"
+        }
+      },
+      {
+        "name": "The Crisis (Stats)",
+        "type": "Data Grid",
+        "content": [
+          { "label": "WORKFORCE GAP", "value": "909 FTE", "color": "text-[#FF3B30]" },
+          { "label": "DEMAND MET", "value": "58%", "color": "text-[#F5A623]" },
+          { "label": "SHORTFALL", "value": "42%", "color": "text-white" }
+        ]
+      },
+      {
+        "name": "Reality Check",
+        "type": "Comparison",
+        "content": {
+          "left": "THE MINISTER SAYS: 'We are listening...'",
+          "right": "THE REPORT SAYS: 'Critical failure to meet demand by 2032.'",
+          "style": "Redacted document style. Black bars over text that reveal truth on hover."
+        }
+      },
+      {
+        "name": "What are MRPs?",
+        "type": "Bento Grid",
+        "content": "Grid of 4 cards explaining: Radiographers, Sonographers, Nuclear Medicine, Radiation Therapists. Use modern tech images as backgrounds with dark overlays."
+      },
+      {
+        "name": "Take Action",
+        "type": "Signup Form",
+        "content": "Headline: 'DON'T LET THEM IGNORE THIS.' Input: Email. Button: 'JOIN THE WATCHLIST'."
+      },
+      {
+        "name": "Footer",
+        "type": "Simple",
+        "content": "Disclaimer: 'Independent advocacy. Not a union. Not a political party.' Links: Privacy, Contact."
+      }
+    ]
+  },
+  "instructions_to_main_agent": [
+    "INSTALL FONTS: Add '@fontsource/anton', '@fontsource/public-sans', '@fontsource/jetbrains-mono' to package.json.",
+    "TAILWIND CONFIG: Update tailwind.config.js to include these font families and the custom colors.",
+    "GLOBAL CSS: Add a noise texture to the body background in index.css.",
+    "COMPONENTS: Use Shadcn for the Form/Input but STRIP all default styling. Force 'rounded-none' and 'border-b' styles.",
+    "ACCESSIBILITY: Ensure the Red/Black contrast is high enough. Use White text on Red backgrounds, not Black on Red.",
+    "TESTING: Add data-testid to the email input ('email-signup-input') and submit button ('email-signup-submit')."
+  ],
+  "universal_guidelines": {
+    "do_not": [
+      "Do NOT use gradients.",
+      "Do NOT use rounded corners (border-radius: 0).",
+      "Do NOT use generic 'medical blue' colors.",
+      "Do NOT use 'Inter' font."
+    ],
+    "must_do": [
+      "MUST use high contrast.",
+      "MUST use uppercase for all headings.",
+      "MUST make the site feel 'urgent'."
+    ]
+  }
+}
