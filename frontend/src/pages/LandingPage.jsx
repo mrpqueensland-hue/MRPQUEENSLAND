@@ -134,10 +134,14 @@ const LandingPage = () => {
       {/* Crisis Stats Section */}
       <section id="crisis" className="py-16 md:py-24 px-8 md:px-12 lg:px-24 bg-[#0a0a0a] section-divider" data-testid="crisis-section">
         <div className="max-w-6xl mx-auto">
-          <div className="flex items-center gap-4 mb-12">
-            <AlertTriangle className="w-8 h-8 text-[#FF3B30]" />
-            <h2 className="font-heading text-3xl md:text-4xl text-white">THE CRISIS IN NUMBERS</h2>
+          <div className="flex items-center gap-4 mb-4">
+            <AlertTriangle className="w-8 h-8 text-[#FF3B30] animate-pulse" />
+            <h2 className="font-heading text-3xl md:text-4xl text-white">THE MINISTER'S OWN REPORT</h2>
           </div>
+          <p className="font-body text-lg text-[#FF3B30] mb-4">
+            These numbers come directly from Queensland Health's Workforce Gap Analysis — 
+            the report the Minister ordered, then ignored.
+          </p>
           <p className="font-mono text-sm text-white/50 mb-8">
             SOURCE: QLD HEALTH WORKFORCE GAP ANALYSIS, NOVEMBER 2025
           </p>
