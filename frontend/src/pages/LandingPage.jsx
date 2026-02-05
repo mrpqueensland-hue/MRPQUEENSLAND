@@ -214,7 +214,7 @@ const LandingPage = () => {
             {/* Report Says */}
             <div className="p-8 bg-[#0a0a0a] border-2 border-white" data-testid="report-says-card">
               <h3 className="font-mono text-sm text-white uppercase tracking-widest mb-4">
-                THE REPORT SAYS
+                WHAT HIS OWN REPORT ACTUALLY SAYS
               </h3>
               <div className="space-y-4">
                 <p className="font-body text-lg text-white/80">
@@ -229,8 +229,9 @@ const LandingPage = () => {
               </div>
               <div className="mt-6 pt-6 border-t border-white/10">
                 <p className="font-mono text-sm text-white/40">
-                  Action required: <span className="text-[#FF3B30] font-bold">URGENT</span>
+                  Report's own assessment:
                 </p>
+                <p className="font-heading text-2xl text-[#FF3B30] mt-2">URGENT ACTION REQUIRED</p>
               </div>
             </div>
           </div>
