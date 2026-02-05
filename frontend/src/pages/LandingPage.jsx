@@ -358,9 +358,7 @@ const LandingPage = () => {
             All posters available as printable PDFs.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <PosterDownload />
-          </div>
+          <PosterDownload />
 
           {/* Domain Suggestions */}
           <div className="mt-16 p-8 bg-[#111] border border-white/10" data-testid="domain-suggestions">
