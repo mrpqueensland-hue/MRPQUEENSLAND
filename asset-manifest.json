@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.b0c4584d.css",
-    "main.js": "/static/js/main.6e591b72.js",
-    "static/js/977.240addac.chunk.js": "/static/js/977.240addac.chunk.js",
-    "static/js/455.a9ba13ed.chunk.js": "/static/js/455.a9ba13ed.chunk.js",
-    "index.html": "/index.html",
-    "main.b0c4584d.css.map": "/static/css/main.b0c4584d.css.map",
-    "main.6e591b72.js.map": "/static/js/main.6e591b72.js.map",
-    "977.240addac.chunk.js.map": "/static/js/977.240addac.chunk.js.map",
-    "455.a9ba13ed.chunk.js.map": "/static/js/455.a9ba13ed.chunk.js.map"
+    "main.css": "/MRPQUEENSLAND/static/css/main.b3564ce3.css",
+    "main.js": "/MRPQUEENSLAND/static/js/main.1c140c37.js",
+    "static/js/977.240addac.chunk.js": "/MRPQUEENSLAND/static/js/977.240addac.chunk.js",
+    "static/js/455.bbea6ccf.chunk.js": "/MRPQUEENSLAND/static/js/455.bbea6ccf.chunk.js",
+    "index.html": "/MRPQUEENSLAND/index.html",
+    "main.b3564ce3.css.map": "/MRPQUEENSLAND/static/css/main.b3564ce3.css.map",
+    "main.1c140c37.js.map": "/MRPQUEENSLAND/static/js/main.1c140c37.js.map",
+    "977.240addac.chunk.js.map": "/MRPQUEENSLAND/static/js/977.240addac.chunk.js.map",
+    "455.bbea6ccf.chunk.js.map": "/MRPQUEENSLAND/static/js/455.bbea6ccf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b0c4584d.css",
-    "static/js/main.6e591b72.js"
+    "static/css/main.b3564ce3.css",
+    "static/js/main.1c140c37.js"
   ]
 }
